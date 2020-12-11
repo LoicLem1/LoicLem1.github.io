@@ -72,6 +72,7 @@ ul#social li{
 
 
 *, *:before, *:after {
+
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -115,7 +116,7 @@ h3 {
   flex-direction: column;
   width: 100%;
   padding: 1rem 3rem 1rem 1rem;
-  color: #7288a2;
+  color: #263342;
   font-size: 1.15rem;
   font-weight: 400;
   border-bottom: 1px solid #e5e5e5;
@@ -123,14 +124,14 @@ h3 {
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
-  color: #2659A8;
+  color: #000080;
 }
 .accordion a:hover::after {
-  border: 1px solid #2659A8;
+  border: 1px solid #000080;
 }
 .accordion a.active {
-  color: #2659A8;
-  border-bottom: 1px solid #2659A8;
+  color: #000080;
+  border-bottom: 1px solid #000080;
 }
 .accordion a::after {
   font-family: 'Ionicons';
@@ -152,8 +153,8 @@ h3 {
 .accordion a.active::after {
   font-family: 'Ionicons';
   content: '\f209';
-  color: #2659A8;
-  border: 1px solid #2659A8;
+  color: #000080;
+  border: 1px solid #000080;
 }
 .accordion .content {
   opacity: 0;
