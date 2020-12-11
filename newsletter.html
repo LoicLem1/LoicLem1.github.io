@@ -23,17 +23,32 @@ p {color:#000080;}
 </header>
 
 
-<nav>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="latest-news.html">Latest News</a></li>
-    <li><a href="videos.html">Videos</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
-
-</nav> <!--end of navigation-->
+<div id = "navbar">
+  <nav>
+  
+      <a href="index.html">Home</a>
+      <a href="latest-news.html">Latest News</a>
+      <a href="videos.html">Videos</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <script src="js/function.js"></script>
+  </nav> <!--end of navigation-->
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+  </div>
 
 <div id = "hero">
 

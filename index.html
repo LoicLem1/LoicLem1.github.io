@@ -27,18 +27,34 @@ p {color:#000080;}
   <img src="images\21601.png" width="100" height="100" alt = "Fake News Logo" />
 </header>
 
-
+<div id = "navbar">
 <nav>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="latest-news.html">Latest News</a></li>
-    <li><a href="videos.html">Videos</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
 
+    <a href="index.html">Home</a>
+    <a href="latest-news.html">Latest News</a>
+    <a href="videos.html">Videos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <script src="js/function.js"></script>
 </nav> <!--end of navigation-->
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</div>
+
+
 
 <div id = "hero">
 
@@ -92,7 +108,7 @@ p {color:#000080;}
   <h1> What is fake news? </h1>
   <p> <b> Fakes news is unreliable news that are either exagerated or completely not true. We are here to make sure that you only recieve 100% factual news. </b> </p>
   <p style="color:blueviolet;"> Want to find out more? <a href="about.html">Go to our about page!</a> </p>
-  <p> ------------------------------------------------------------------------------------------------------------------------ </p>
+
   </section> <!--end of latest news section -->
   </main>
 
@@ -102,7 +118,7 @@ p {color:#000080;}
 <img src="images/trump_count.png" width="100%" alt="Latest News Image" />
 <p> <b> Trump goes to twitter, "STOP THE COUNT!" </b> </p>
 <p style="color:blueviolet;"> What did he really mean? <a href="latest-news.html">READ MORE</a> </p>
-<p> ------------------------------------------------------------------------------------------------------------------------ </p>
+
 </section> <!--end of latest news section -->
 </main>
 
