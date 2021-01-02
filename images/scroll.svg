@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 36 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g id="scroll" transform="matrix(1,0,0,1,-943.545,-867.862)">
+        <g id="Rectangle_3" transform="matrix(1,0,0,1,943.545,867.862)">
+            <path d="M35.69,17.845C35.69,7.996 27.694,0 17.845,0C7.996,0 0,7.996 0,17.845L0,71.381C0,81.23 7.996,89.226 17.845,89.226C27.694,89.226 35.69,81.23 35.69,71.381L35.69,17.845Z" style="fill:none;"/>
+            <path d="M33.19,17.845C33.19,9.376 26.314,2.5 17.845,2.5C9.376,2.5 2.5,9.376 2.5,17.845L2.5,71.381C2.5,79.85 9.376,86.726 17.845,86.726C26.314,86.726 33.19,79.85 33.19,71.381L33.19,17.845Z" style="fill:none;stroke:white;stroke-width:5px;"/>
+        </g>
+        <g id="Rectangle_4" transform="matrix(1,0,0,1,956.3,916.298)">
+            <path d="M10.197,5.098C10.197,2.285 7.912,0 5.099,0C2.285,0 0,2.285 0,5.098L0,20.395C0,23.208 2.285,25.493 5.098,25.493C7.912,25.493 10.197,23.208 10.197,20.395L10.197,5.098Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

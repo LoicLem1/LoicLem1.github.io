@@ -1,144 +1,100 @@
-<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<meta charset="uft-8">
-<title>Home | Fake News</title>
-
-<style type = "text/css">
-
-p {color:#000080;}
-
-</style>
-
-<link href="css/style.css" rel="stylesheet" type = "text/css">
-
-<style>
-  h1 {text-align: center;}
-  p {text-align: center;}
-</style>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>L.l Home</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/firstsection.css">
 </head>
 <body>
 
-
-<div id="wrapper">
-
-<header>
-  <img src="images\21601.png" width="100" height="100" alt = "Fake News Logo" />
-</header>
-
-<div id = "navbar">
-<nav>
-
-    <a href="index.html">Home</a>
-    <a href="latest-news.html">Latest News</a>
-    <a href="videos.html">Videos</a>
-    <a href="faq.html">FAQ</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <script src="js/function.js"></script>
-</nav> <!--end of navigation-->
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
-</div>
+	<div class="container">
+        <header>
+            <img src="images/logo.svg" alt="logo" class="logo">
 
 
+            <nav>
+                <a href="#" class="hide-desktop"> 
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile change-color" id="navbar">
+                    <li class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit" id="exit">
+                    </li>
+                    <li><a href="index.html"><b>home.</b></a></li>
+                    <li><a href="mystuff.html"><b>my stuff.</b></a></li>
+                    <li><a href="about.html"><b>about.</b></a></li>
+                    <li><a href="contact.html"><b>contact.</b></a></li>
+                </ul>
 
-<div id = "hero">
+            </nav>
+        </header>
+        
+        <section>
+			
+			<h1 class="firstheading">Loic Lorente<p class="subhead">my portfolio</p></h1>
+	
+			
+			<div class="container">
+				<a href="contact.html" class="cta"><b>Get In Touch</b></a>
+			</div><img src="images/imagescreen.svg" alt="screen graphic" class="screengraphic">  
+		</section>
+	</div>
 
-<img src="images/fakenewsimg.jpg" width="100%" alt = "Hero Image" />
+	<div>
+		<img src="images/semicircleleft.svg" alt="semi circle" class="semicircleleft">
+		<img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">  
+	</div>
+	
 
-</div> <!--end of hero image-->
-
+	<section>
 
 
 
-<style>
-.button {
-  border: white;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  margin: 20px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  padding: 2%;
-}
+	</section>
+
+    <footer>
+		</div>
+			<div class="footer-container">
+				<div class="container">
+					<a href="index.html">
+						<img src="images/logo.svg" class="footerlogo" alt="logo">
+					</a>
+						<p class="address">loiclem1@outlook.com <br> Website developed by Loic Lorente</p>
+						<ul class="footer-links">
+							<li><a href="#">twitter.</a></li>
+							<li><a href="#">insta.</a></li>
+							<li><a href="#">github.</a></li>
+							<li><a href="#">linkedin.</a></li>
+						</ul>
+				</div>
+    </footer>
 
 
 
-.button2 {
-  background-color: rgb(255, 255, 255);
-  color: #000080;
-  border: 2px solid #000080;
-}
+<!--###########################-->
+<!--JAVA SCRIPT FOR BURGER MENU-->
+<!--JAVA SCRIPT FOR BURGER MENU-->
+<!--###########################-->
 
-.button2:hover {
-  background-color: #000080;
-  color: rgb(255, 255, 255);
-}
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('navbar');
+        var exit = document.getElementById('exit');
 
-</style>
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
 
-</head>
-<body>
-  <main>
-<div class="newsletterbutton-center">
-<a href="newsletter.html"><button class="button button2 " >Sign up to our newsletter! </button></a>
-</div>
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
 
-  <section id = "what-is">
-  <h1> What is fake news? </h1>
-  <p> <b> Fakes news is unreliable news that are either exagerated or completely not true. We are here to make sure that you only recieve 100% factual news. </b> </p>
-  <p style="color:blueviolet;"> Want to find out more? <a href="about.html">Go to our about page!</a> </p>
+    </script>
 
-  </section> <!--end of latest news section -->
-  </main>
-
-
-<section id = "latest-news">
-<h1> Latest News </h1>
-<img src="images/trump_count.png" width="100%" alt="Latest News Image" />
-<p> <b> Trump goes to twitter, "STOP THE COUNT!" </b> </p>
-<p style="color:blueviolet;"> What did he really mean? <a href="latest-news.html">READ MORE</a> </p>
-
-</section> <!--end of latest news section -->
-</main>
-
-
-<footer>
-
-<ul id="social">
-<li><a href="https://www.fb.com"><img src="images/facebook_icon.png" width="50" height="50" alt="facebook icon" /></a></li>
-<li><a href="https://www.twitter.com"><img src="images/twitter_icon.png" width="50" height="50" alt="twitter icon" /></a></li>
-<li><a href="https://www.instagram.com"><img src="images/instagram_icon.png" width="50" height="50" alt="instagram icon" /></a></li>
-</ul>
-
-<p>Accessibility Statement</p>
-<p>Copyright</p>
-<p>Privacy Statement</p>
-<p>Cookies</p>
-
-
-
-</div> <!--end of wrapper-->
-
-</footer>
+	
 </body>
 </html>
