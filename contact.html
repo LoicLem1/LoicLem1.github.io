@@ -1,135 +1,101 @@
-<!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<meta charset="uft-8">
-<title>Contact | Fake News</title>
-<style type = "text/css">
-
-p {color:#000080;}
-
-</style>
-
-<link href="css/style.css" rel="stylesheet" type = "text/css">
-
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>L.l Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/firstsection.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 
-<div id="wrapper">
-
-<header>
-  <img src="images\21601.png" width="100" height="100" alt = "Fake News Logo" />
-</header>
+	<div class="container">
+        <header>
+            <img src="images/logo.svg" alt="logo" class="logo">
 
 
-<div id = "navbar">
-  <nav>
-  
-      <a href="index.html">Home</a>
-      <a href="latest-news.html">Latest News</a>
-      <a href="videos.html">Videos</a>
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <script src="js/function.js"></script>
-  </nav> <!--end of navigation-->
-  <script>
-    window.onscroll = function() {myFunction()};
+            <nav>
+                <a href="#" class="hide-desktop"> 
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile change-color" id="navbar">
+                    <li class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit" id="exit">
+                    </li>
+                    <li><a href="index.html"><b>home.</b></a></li>
+                    <li><a href="mystuff.html"><b>my stuff.</b></a></li>
+                    <li><a href="about.html"><b>about.</b></a></li>
+                    <li><a href="contact.html"><b>contact.</b></a></li>
+                </ul>
+
+            </nav>
+        </header>
+        
+        <div class="container2">
+            <div style="text-align:center">
+              <h2>Want to contact me?</h2>
+              <p>Use this form or shoot me a dm at any of my socials!</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <a class="twitter-timeline" data-height="500" data-theme="light" href="https://twitter.com/twitter?ref_src=twsrc%5Etfw">Tweets by L2Lem1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">Full Name.</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Your Email.</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Your Message.</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+
+    <footer>
+		</div>
+			<div class="footer-container">
+				<div class="container">
+					<a href="index.html">
+						<img src="images/logo.svg" class="footerlogo" alt="logo">
+					</a>
+						<p class="address">loiclem1@outlook.com <br> Website developed by Loic Lorente</p>
+						<ul class="footer-links">
+							<li><a href="https://twitter.com/twitter">twitter.</a></li>
+							<li><a href="#">insta.</a></li>
+							<li><a href="https://github.com/">github.</a></li>
+						</ul>
+				</div>
+    </footer>
+
+
+
+<!--###########################-->
+<!--JAVA SCRIPT FOR BURGER MENU-->
+<!--JAVA SCRIPT FOR BURGER MENU-->
+<!--###########################-->
+
+    <script>
     
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-    
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('navbar');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
     </script>
-  </div>
 
-<div id = "hero">
-
-<img src="images/fakenewsimg.jpg" width="100%" alt = "Hero Image" />
-
-</div> <!--end of hero image-->
-
-
-
-<main>
-  <section id = "contact">
-  <h1> Contact us! </h1>
-  <p> <b>  Have any inquiries, or just want to send us a nice message? Do it right here!</b> </p>
-  </section> <!--end of latest news section -->
-
-
-
-
-
-
-  <div class="container">
-    <form action="action_page.php">
-  
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="John">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Smith">
-
-      <label for="contactemail">Email</label>
-      <input type="text" id="lname" name="lastname" placeholder="something@somethingelse.com">
-  
-      
-      </select>
-  
-      <label for="contactmessage">Message</label>
-      <textarea id="subject" name="subject" placeholder="Speak your mind!" style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div>
-</main>
-
-
-
-
-
-  <!-- Site footer -->
-
-  <style>
-    li, h6 {text-align: center;}
-  </style>
-
-  <footer class="site-footer">
-    <div class="container1">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <p class="text-justify">The Fake News Org. Bringing you real, reliable news.</p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Socials</h6>
-          <ul class="footer-links">
-            <li><a href="https://www.twitter.com/">Twitter</a></li>
-            <li><a href="https://www.fb.com/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container1">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy;  - 2021 All Rights Reserved by 
-       <a href="index.html">The Fake News Org</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-</footer>
+	
 </body>
 </html>

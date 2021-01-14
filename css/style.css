@@ -1,420 +1,208 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
-
-
-#wrapper {
-
-width:70%;
-margin:auto;
-
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #01345B;
+    min-height:100%;/*or 100vh */
+    position:relative;
+    width: 1920px;
+    height: 1080px;
 }
 
-/* Style the navbar */
-#navbar {
-  overflow: hidden;
-  background-color: #000080;
+p {
+    font-size: .9em;
+    line-height: 1.6em;
 }
 
-/* Change the color of links on hover */
-nav a:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000080;
-}
-
-/* Add a color to the active/current link */
-nav a.active {
-  background-color: #000080 ;
-  color: #000080;
-
-}
-/* Navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-
- ul#social li {
-    float: left;
-  }
-
-ul#social li{
+ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-
-
-
-*, *:before, *:after {
-
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+h2 {
+    color: #fff;
+    margin-top: 7%;
 }
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Hind', sans-serif;
-  background: #fff;
-  color: #4d5974;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-}
+
+
 .container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
+    text-align: center;
+    padding: .8em 1.2em 2em;
 }
-h3 {
-  font-size: 1.75rem;
-  color: #373d51;
-  padding: 1.3rem;
-  margin: 0;
+
+.logo {
+    width: 80px;
 }
-.accordion a {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  padding: 1rem 3rem 1rem 1rem;
-  color: #263342;
-  font-size: 1.15rem;
-  font-weight: 400;
-  border-bottom: 1px solid #e5e5e5;
+
+.hide-mobile {
+    display:none;
 }
-.accordion a:hover,
-.accordion a:hover::after {
-  cursor: pointer;
-  color: #000080;
+
+ul {
+    text-decoration: none;
+    color: #fff;
 }
-.accordion a:hover::after {
-  border: 1px solid #000080;
+
+header {
+    display: flex;
+    justify-content: space-between;
 }
-.accordion a.active {
-  color: #000080;
-  border-bottom: 1px solid #000080;
-}
-.accordion a::after {
-  font-family: 'Ionicons';
-  content: '\f218';
-  position: absolute;
-  float: right;
-  right: 1rem;
-  font-size: 1rem;
-  color: #7288a2;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #7288a2;
-  text-align: center;
-}
-.accordion a.active::after {
-  font-family: 'Ionicons';
-  content: '\f209';
-  color: #000080;
-  border: 1px solid #000080;
-}
-.accordion .content {
-  opacity: 0;
-  padding: 0 1rem;
-  max-height: 0;
-  border-bottom: 1px solid #e5e5e5;
-  overflow: hidden;
-  clear: both;
-  -webkit-transition: all 0.2s ease 0.15s;
-  -o-transition: all 0.2s ease 0.15s;
-  transition: all 0.2s ease 0.15s;
-}
-.accordion .content p {
-  font-size: 1rem;
-  font-weight: 300;
-}
-.accordion .content.active {
-  opacity: 1;
-  padding: 1rem;
-  max-height: 100%;
-  -webkit-transition: all 0.35s ease 0.15s;
-  -o-transition: all 0.35s ease 0.15s;
-  transition: all 0.35s ease 0.15s;
+
+.menu {
+    width: 25px;
+    margin-top: 45%;
 }
 
 
-.newsletterbutton-center {
-  text-align: center;
+
+
+
+nav ul {
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    padding-top: 3em;
+    z-index: 7;
 }
 
-
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------- */
-
-
-/* Style the form element with a border around it */
-form {
-  border: 4px solid #ffffff;
-}
-
-/* Add some padding and a grey background color to containers */
-.container {
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-/* Style the input elements and the submit button */
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid rgb(255, 255, 255);
-  box-sizing: border-box;
-}
-
-/* Add margins to the checkbox */
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #000080;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid rgb(255, 255, 255); /* Gray border */
-  border-radius: 20px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #000080;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #000080;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 1920px) {
-  .column {
-    width: 100%;
+nav ul li a {
+    color: white;
+    text-decoration: none;
     display: block;
-  }
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(27, 27, 27);
 }
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+nav ul li a:hover {
+    background-color: rgb(125, 112, 145);
 }
 
-/* Some left and right padding inside the container */
-.container {
-  padding: 0 16px;
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
 }
 
-/* Clear floats */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 850px) {
+    .screengraphic {
+        display: none;
+    }
+
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+
+
+    nav ul {
+        width: 40%;
+    }
+    
+    .semicircleleft {
+        display: none;
+    }
+
+    .footercontainer {
+        width: 10%;
+    }
+
 }
 
-.title {
-  color: grey;
+@media only screen and (min-width: 875px) {
+
+    .subhead {
+        margin-bottom: 15%;
+    }
+
+
+@media only screen and (min-width: 1024px) {
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: rgb(255, 255, 255);
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1.2s infinite alternate ;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(20px);
+        }
+    }
+
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color:#000080;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+@media only screen and (min-width: 1600px) {
+        .server {
+            width: 40%;
+            margin: 5em auto 4em 15%;
+        }
 
-.button:hover {
-  background-color: #555;
-} 
+        .container {
+            width: 70x;
+        }
 
+        
+        h2 {
+            margin-top: 4em;
+        }
 
 
+    }
 
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.site-footer
-{
-  background-color: #263342;
-  margin-top: 60px;
-  padding: 10px 0 20px;
-  font-size:15px;
-  line-height:20px;
-  color:#737373;
-}
-
-.site-footer h6
-{
-  color:rgb(255, 255, 255);
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-  
-}
-.site-footer a
-{
-  color:#ffffff;
-}
-.site-footer a:hover
-{
-  color:#000080;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#000080;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-
-.copyright-text
-{
-  margin:0
-}
-
-.container1 {
-  background-color: #38495e;
-}
-
-.footer-links a {
-  color: rgb(173, 173, 173);
-}
-
-.text-justify {
-  color: #fff;
-}
-
-.copyright-text {
-  color: #fff;
 }
