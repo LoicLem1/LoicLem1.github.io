@@ -12,26 +12,26 @@ margin:auto;
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #000080;
+  background-color: #1A1A1D;
 }
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000080;
+  background-color: #C3073F;
+  color: #fff;
 }
 
 /* Add a color to the active/current link */
 nav a.active {
-  background-color: #000080 ;
-  color: #000080;
+  background-color: #1A1A1D ;
+  color: #1A1A1D;
 
 }
 /* Navbar links */
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -83,8 +83,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Hind', sans-serif;
-  background: #fff;
-  color: #4d5974;
+  background: #1A1A1D;
+  color: #C3073F;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -98,7 +98,7 @@ body {
 }
 h3 {
   font-size: 1.75rem;
-  color: #373d51;
+  color: #C3073F;
   padding: 1.3rem;
   margin: 0;
 }
@@ -123,14 +123,14 @@ h3 {
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
-  color: #000080;
+  color: #C3073F;
 }
 .accordion a:hover::after {
-  border: 1px solid #000080;
+  border: 1px solid #C3073F;
 }
 .accordion a.active {
-  color: #000080;
-  border-bottom: 1px solid #000080;
+  color: #C3073F;
+  border-bottom: 1px solid #C3073F;
 }
 .accordion a::after {
   font-family: 'Ionicons';
@@ -152,8 +152,8 @@ h3 {
 .accordion a.active::after {
   font-family: 'Ionicons';
   content: '\f209';
-  color: #000080;
-  border: 1px solid #000080;
+  color: #C3073F;
+  border: 1px solid #C3073F;
 }
 .accordion .content {
   opacity: 0;
