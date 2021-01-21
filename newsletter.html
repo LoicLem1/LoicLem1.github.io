@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="uft-8">
-<title>Contact | Fake News</title>
+<title>Newsletter | Fake News</title>
 <style type = "text/css">
 
 p {color:#000080;}
@@ -11,6 +11,14 @@ p {color:#000080;}
 </style>
 
 <link href="css/style.css" rel="stylesheet" type = "text/css">
+
+
+<style>
+  h1 {text-align: center;}
+  h2 {text-align: center;}
+  h3 {text-align: center;}
+  p {text-align: center;}
+</style>
 
 
 </head>
@@ -59,42 +67,27 @@ p {color:#000080;}
 
 
 <main>
-  <section id = "contact">
-  <h1> Contact us! </h1>
-  <p> <b>  Have any inquiries, or just want to send us a nice message? Do it right here!</b> </p>
-  </section> <!--end of latest news section -->
 
-
-
-
-
-
-  <div class="container">
     <form action="action_page.php">
-  
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="John">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Smith">
-
-      <label for="contactemail">Email</label>
-      <input type="text" id="lname" name="lastname" placeholder="something@somethingelse.com">
-  
+        <div class="container" style="background-color:white">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>No spam, just good, useful information.</p>
+        </div>
       
-      </select>
-  
-      <label for="contactmessage">Message</label>
-      <textarea id="subject" name="subject" placeholder="Speak your mind!" style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div>
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Confirm!
+          </label>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+
 </main>
-
-
-
 
 
   <!-- Site footer -->
