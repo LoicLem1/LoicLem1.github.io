@@ -6,17 +6,64 @@
 <title>About | Fake News</title>
 <style type = "text/css">
 
-p {color:#000080;}
+p {color:#fff;}
 
 </style>
 
 <link href="css/style.css" rel="stylesheet" type = "text/css">
+<link href="css/about.css" rel="stylesheet" type = "text/css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Hind?preview.text_type=custom&preview.size=36#standard-styles">
 
 <style>
-  h1 {text-align: center;}
-  h2 {text-align: center;}
+  h1 {text-align: left;}
+  h2 {
+    text-align: left;
+    font-family: 'Hind', sans-serif;
+    margin-left: 25%;
+  }
   h3 {text-align: center;}
-  p {text-align: center;}
+  .text-justify {text-align: left;}
+  p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Hind', sans-serif;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .site-footer p {
+    text-align: center;}
+  .copyright-text {margin-left: 25%;}
+
+  .AboutUsImage 
+  {
+    margin-left: 25%;
+    padding-top: 70px;
+  }
+
+
+  .button3 {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 2%;
+    width: 20%;
+
+    background-color: #C3073F;
+    color: #fff;
+    border: 2px solid #C3073F;
+    border-radius: 10px;
+  }
+
+  .button3:hover {
+    background-color: #c3073f69;
+    color: rgba(255, 255, 255, 0.733);
+    border: 0px;
+  }
+
 </style>
 
 </head>
@@ -25,7 +72,9 @@ p {color:#000080;}
 <div id="wrapper">
 
 <header>
-  <img src="images\21601.png" width="100" height="100" alt = "Fake News Logo" />
+  <a href="index.html">
+    <img src="images\21601.png" width="200" height="100" alt = "Fake News Logo" />
+    </a>
 </header>
 
 
@@ -39,6 +88,7 @@ p {color:#000080;}
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <script src="js/function.js"></script>
+
   </nav> <!--end of navigation-->
   <script>
     window.onscroll = function() {myFunction()};
@@ -58,7 +108,7 @@ p {color:#000080;}
 
 <div id = "hero">
 
-<img src="images/fakenewsimg.jpg" width="100%" alt = "Hero Image" />
+<img src="images/slice1.png" width="100%" alt = "Hero Image" />
 
 </div> <!--end of hero image-->
 
@@ -66,47 +116,27 @@ p {color:#000080;}
 
 <main>
   <section id = "about-us">
-  <h1> About Us </h1>
+  <h3> <b> About Us </b></h3>
   <h3> Information is power </h3>
-  <p> <b> Our mission is to inform you with factual news. </b> </p>
-
-  </section> <!--end of latest news section -->
+  <h2> <b> Our mission is to inform you with factual news. </b> </h2>
+  <p> With the growth of social media, fake news has spreaded and corruped the minds of the people. Our goal is to provide everyone with reliable news that they can trust, share and rely on as they live their day-to-day lives. Here at the FAKE NEWS organisation, we have contrusted our foundation on truth and truth alone. Founded in 2019, we believe that people should not be tricked by propaganda and exagerated news. </p>    
+  </section> 
   </main>
 
   <main>
     <section id = "how-can-you-help">
-    <h1> How can you help? </h1>
-    <p> <b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut vulputate nisl. Mauris commodo libero rutrum bibendum placerat. Ut at velit tempor, aliquam nisi in, pretium massa. Maecenas dui diam, tincidunt vitae dictum vel, mattis a urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </b> </p>
-
-    </section> <!--end of latest news section -->
+    <h3> That sounds good. What now? </h3>
+    <p> Feel free to contact us with any inquiries you may have. If there is anything you believe we should look into, or if theres anything you think we have incorrectly posted, contact us and let us know! Our newsletter is also available!</p>
+    </section> 
     </main>
 
-    <div class="row">
-          <div class="container">
-            <h2>John Smith</h2>
-            <img src="images/stafficon.png" alt="Staff" width="100%" height="100%">
-            <p class="title">Company Position</p>
-            <p>QWERTYUIOP</p>
-            <p>something@something else.com</p>
-            <p><button class="button">Contact</button></p>
-      
-      </div>
-    
+    <div class="newsletterbutton-center">
+      <a href="newsletter.html"><button class="button3" >Sign up to our newsletter! </button></a>
+    </div>
 
-      <div class="row">
-        <div class="container">
-          <h2>John Smith</h2>
-          <img src="images/stafficon.png" alt="Staff" width="100%" height="100%">
-          <p class="title">Company Position</p>
-          <p>QWERTYUIOP</p>
-          <p>something@something else.com</p>
-          <p><button class="button">Contact</button></p>
-    
-    </div>
-    
-      
-    </div>
   
+  <img class="AboutUsImage" src="images/researcg.jpg" width="50%" alt="AboutUsImage" />
+
 
 
 
@@ -137,8 +167,8 @@ p {color:#000080;}
     <div class="container1">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy;  - 2021 All Rights Reserved by 
-       <a href="index.html">The Fake News Org</a>.
+          <p class="copyright-text">Copyright &copy; - 2021 All Rights Reserved by 
+      <a href="index.html">The Fake News Org</a>.
           </p>
         </div>
       </div>

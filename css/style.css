@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://fonts.google.com/specimen/Montserrat?preview.text_type=custom');
 
 
 
 #wrapper {
 
-width:70%;
+width:100%;
 margin:auto;
 
 }
@@ -12,19 +12,19 @@ margin:auto;
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #1A1A1D;
+  background-color: #101010;
 }
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: #C3073F;
+  background-color: #fff;
   color: #fff;
 }
 
 /* Add a color to the active/current link */
 nav a.active {
-  background-color: #1A1A1D ;
-  color: #1A1A1D;
+  background-color: #101010 ;
+  color: #101010;
 
 }
 /* Navbar links */
@@ -55,7 +55,7 @@ nav a.active {
 }
 
 
- ul#social li {
+ul#social li {
     float: left;
   }
 
@@ -82,9 +82,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Hind', sans-serif;
-  background: #1A1A1D;
-  color: #C3073F;
+  background: #101010;
+  color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -97,11 +96,18 @@ body {
   width: 48rem;
 }
 h3 {
-  font-size: 1.75rem;
-  color: #C3073F;
+  font-size: 3rem;
+  color: #fff;
   padding: 1.3rem;
   margin: 0;
+  text-align: center;
 }
+
+p {
+  font-size: 2rem;
+}
+
+
 .accordion a {
   position: relative;
   display: -webkit-box;
@@ -123,14 +129,14 @@ h3 {
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
-  color: #C3073F;
+  color: #fff;
 }
 .accordion a:hover::after {
-  border: 1px solid #C3073F;
+  border: 1px solid #fff;
 }
 .accordion a.active {
-  color: #C3073F;
-  border-bottom: 1px solid #C3073F;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 .accordion a::after {
   font-family: 'Ionicons';
@@ -139,21 +145,21 @@ h3 {
   float: right;
   right: 1rem;
   font-size: 1rem;
-  color: #7288a2;
+  color: #B8B8B8;
   padding: 5px;
   width: 30px;
   height: 30px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #7288a2;
+  border: 1px solid #B8B8B8;
   text-align: center;
 }
 .accordion a.active::after {
   font-family: 'Ionicons';
   content: '\f209';
-  color: #C3073F;
-  border: 1px solid #C3073F;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .accordion .content {
   opacity: 0;
@@ -207,7 +213,7 @@ input[type=text], input[type=submit] {
   padding: 12px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
@@ -242,7 +248,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #000080;
+  background-color: #555;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -252,7 +258,9 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #000080;
+  background-color: #000000;
+  color: #ffff;
+  border-color: #555;
 }
 
 /* Add a background color and some padding around the form */
@@ -296,17 +304,13 @@ input[type=submit]:hover {
   display: table;
 }
 
-.title {
-  color: grey;
-}
-
 .button {
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color:#000080;
+  background-color:#000000;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -325,57 +329,32 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .site-footer
 {
-  background-color: #263342;
+  background-color: #101010;
   margin-top: 60px;
-  padding: 10px 0 20px;
+  padding: 20px 0 20px;
   font-size:15px;
   line-height:20px;
-  color:#737373;
+  color:#101010;
 }
 
 .site-footer h6
 {
   color:rgb(255, 255, 255);
-  font-size:16px;
+  font-size:26px;
   text-transform:uppercase;
-  margin-top:5px;
   letter-spacing:2px
   
 }
 .site-footer a
 {
   color:#ffffff;
+  font-size: 20px;
 }
 .site-footer a:hover
 {
-  color:#000080;
+  color:#555;
   text-decoration:none;
 }
 .footer-links
@@ -390,7 +369,7 @@ body {
 
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
-  color:#000080;
+  color:#101010;
   text-decoration:none;
 }
 .footer-links.inline li
@@ -404,17 +383,21 @@ body {
 }
 
 .container1 {
-  background-color: #38495e;
+  background-color: #101010;
 }
 
-.footer-links a {
-  color: rgb(173, 173, 173);
-}
 
 .text-justify {
   color: #fff;
 }
 
-.copyright-text {
-  color: #fff;
+
+.text-justify, .copyright-text {
+  font-size: 25px;
+  color: #101010;
+  font-weight: bold;
+}
+
+.row p {
+  color:#fff;
 }

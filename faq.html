@@ -6,14 +6,15 @@
 <title>FAQ | Fake News</title>
 <style type = "text/css">
 
-p {color:#000080;}
-
 </style>
 
 <link href="css/style.css" rel="stylesheet" type = "text/css">
 
 <style>
-  h1 {text-align: center;}
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }    
   h2 {text-align: center;}
   h3 {text-align: center;}
   p {text-align: center;}
@@ -36,7 +37,9 @@ p {color:#000080;}
 <div id="wrapper">
 
 <header>
-  <img src="images\21601.png" width="100" height="100" alt = "Fake News Logo" />
+  <a href="index.html">
+    <img src="images\21601.png" width="200" height="100" alt = "Fake News Logo" />
+  </a>
 </header>
 
 <div id = "navbar">
@@ -68,7 +71,7 @@ p {color:#000080;}
 
 <div id = "hero">
 
-<img src="images/fakenewsimg.jpg" width="100%" alt = "Hero Image" />
+<img src="images/slice1.png" width="100%" alt = "Hero Image" />
 
 </div> <!--end of hero image-->
 
@@ -79,84 +82,138 @@ p {color:#000080;}
   .button {
     border: white;
     color: white;
-    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
-    margin: 20px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     padding: 2%;
+    width: 20%;
   }
-  
-  
   
   .button2 {
     background-color: rgb(255, 255, 255);
-    color: #000080;
-    border: 2px solid #000080;
+    color: #C3073F;
+    border: 2px solid #C3073F;
+    border-radius: 10px;
   }
   
   .button2:hover {
-    background-color: #000080;
+    background-color: #C3073F;
     color: rgb(255, 255, 255);
   }
   
+
+
+
+
+  .accordion {
+  margin-left: 25%;
+  background-color: #eee;
+  color: #555;
+  cursor: pointer;
+  padding: 2%;
+  width: 50%;
+  text-align: left;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #555;
+  margin-left: 25%;
+  color: white;
+}
+
+.accordion:after {
+  content: '\002B';
+  background-color: #fff;
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  width: 50%;
+  border-radius: 8px;
+  margin-left: 25%;
+}
+
+.active:after {
+  content: "\2212";
+  width: 50%;
+  border-radius: 8px;
+  margin-left: 25%;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.panel p {
+  color: #555;
+  font-size: 20px;
+}
+
   </style>
 
 <main>
-  <div class="container">
- 
-    <h2>Frequently Asked Questions</h2>
-   
-    <div class="accordion">
-      <div class="accordion-item">
-        <a>What do we do exactly?</a>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <a>Can i help in any way?</a>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <a>Are you a non-proft organisation?</a>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <a>Are you articles really as reliable as you say?</a>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <a>Question?</a>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-        </div>
-      </div>
-      
-    
-    </div>
-    
-  </div>
-   
+  <h1>Frequently Asked Questions</h1>
+  <button class="accordion"><b>How can I help?</b></button>
+<div class="panel">
+  <p> Subscribing to our newsletter is the easiest way to help us out! You can find the button to locate the newsletter on our home page. If you would like to donate, please contact us and we will redirect you to our donation link.</p>
+</div>
+
+<button class="accordion">How does Fake News make money?</button>
+<div class="panel">
+  <p> We do not sell your data to any companies. We rely on adverts and donations to stay up and running. If you would like to donate, contact us! (It may come with special perks!)</p>
+</div>
+
+<button class="accordion">How can we trust your news?</button>
+<div class="panel">
+  <p> We research each topic before posting it, only collecting information from trusted sources. If there is something you believe is incorrect, contact us! This is a community effort to bring everyone trust worthy news.</p>
+</div>
+
+<button class="accordion">What should I do if I find a website with fake news?</button>
+<div class="panel">
+  <p> Contact the website and complain about the issue. If you would like us to create a factually correct article on what the article they got wrong, contact us!</p>
+</div>
 
   </section> 
 
   <div class="newsletterbutton-center">
     <h1><b>Cant find the answer you need?</b></h1>
-    <a href="newsletter.html"><button class="button button2 " >Contact us! </button></a>
+    <a href="contact.html"><button class="button button2 " >Contact us! </button></a>
     </div>
   </main>
 
 
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
 
   <!-- Site footer -->
