@@ -1,198 +1,38 @@
-<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<html>
-<head>
-<meta charset="uft-8">
-<title>Home | Fake News</title>
-
-<style type = "text/css">
-
-p {color:#C3073F;}
-
-</style>
-
-<link href="css/style.css" rel="stylesheet" type = "text/css">
-
-<style>
-  h1, p, li, h6 {text-align: center;}
-  p {
-    font-size: 20px;
-    width: 50%;
-    margin-left: 25%;
-  }
-</style>
-
-
-
-</head>
-<body>
-
-
-<div id="wrapper">
-
-<header>
-  <a href="index.html">
-  <img src="images\21601.png" width="200" height="100" alt = "Fake News Logo" />
-  </a>
-</header>
-
-<div id = "navbar">
-<nav>
-
-    <a href="index.html">Home</a>
-    <a href="latest-news.html">Latest News</a>
-    <a href="videos.html">Videos</a>
-    <a href="faq.html">FAQ</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <script src="js/function.js"></script>
-</nav> <!--end of navigation-->
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
-</div>
-
-
-
-<div id = "hero">
-
-<img src="images/slice1.png" width="100%" alt = "Hero Image" />
-
-</div> <!--end of hero image-->
-
-
-
-
-<style>
-
-.button3 {
-    border: white;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    padding: 2%;
-    width: 20%;
-
-    background-color: rgb(255, 255, 255);
-    color: #C3073F;
-    border: 2px solid #C3073F;
-    border-radius: 10px;
-  }
-
-  .button2 {
-    margin-left: 40%;
-    border: white;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    padding: 2%;
-    width: 20%;
-  }
-  
-  .button2 {
-    background-color: rgb(255, 255, 255);
-    color: #C3073F;
-    border: 2px solid #C3073F;
-    border-radius: 10px;
-  }
-  
-  .button2:hover {
-    background-color: #C3073F;
-    color: rgb(255, 255, 255);
-  }
-
-  .button3:hover {
-    background-color: #C3073F;
-    color: rgb(255, 255, 255);
-  }
-  
-  .HomeNewImage {margin-left: 25%;}
-  .copyright-text {margin-left: 25%;}
-
-</style>
-
-</head>
-<body>
-<main>
-<div class="newsletterbutton-center">
-<a href="newsletter.html"><button class="button3" >Sign up to our newsletter! </button></a>
-</div>
-
-  <section id = "what-is">
-  <h1> What is fake news? </h1>
-  <p> Fakes news is unreliable news that are either exagerated or completely not true. We are here to make sure that you only recieve 100% factual news. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut vulputate nisl. Mauris commodo libero rutrum bibendum placerat. Ut at velit tempor, aliquam nisi in, pretium massa. Maecenas dui diam, tincidunt vitae dictum vel, mattis a urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-
-
-  </section> <!--end of latest news section -->
-  </main>
-
-
-<section id = "latest-news">
-<h1> Latest News </h1>
-<img class="HomeNewImage" src="images/trump_count.png" width="50%" alt="Latest News Image" />
-<p> <b> Trump goes to twitter, "STOP THE COUNT!" </b> </p>
-
-<p style="color:white;"> What did he really mean?</p>
-<a href="contact.html"><button class="button2" > Read More! </button></a>
-
-</section> <!--end of latest news section -->
-</main>
-
-
-
-  <!-- Site footer -->
-
-  <style>
-    li, h6 {text-align: center;}
-  </style>
-
-  <footer class="site-footer">
-    <div class="container1">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <p class="text-justify">The Fake News Org. Bringing you real, reliable news.</p>
-        </div>
-        <div class="col-xs-6 col-md-3">
-          <h6>Socials</h6>
-          <ul class="footer-links">
-            <li><a href="https://www.twitter.com/">Twitter</a></li>
-            <li><a href="https://www.fb.com/">Facebook</a></li>
-            <li><a href="https://www.instagram.com/">Instagram</a></li>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container1">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; - 2021 All Rights Reserved by 
-    <a href="index.html">The Fake News Org</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-</footer>
+      </nav>
+    </header>
 
-</footer>
-</body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>We provide you with quality reads every month.</h1>
+        <button class="button"><span>Subscribe!</span></button>
+      </div>
+    </div>
+
+    <div class="first">
+      <h1><b>Welcome!</b></h1>
+    </div>
+  </body>
 </html>
