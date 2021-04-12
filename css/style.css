@@ -130,4 +130,34 @@ nav a:hover::before {
 .first h1 {
   text-align: center;
   font-weight: bolder;
+  color: #865246;
+  font-size: 2.5em;
+}
+
+.first p {
+  font-size: 1.3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  text-align: center;
+}
+
+.second {
+  margin-top: 3%;
+  padding-top: 10px;
+  background-color: #865246;
+  padding-bottom: 300px;
+}
+
+.second-text h1 {
+  color: #fff;
+  margin-left: 3%;
+}
+
+.second-text p {
+  font-size: 1.3em;
+  width: 40%;
+  color: white;
+  margin-left: 3%;
+  float: left;
 }
