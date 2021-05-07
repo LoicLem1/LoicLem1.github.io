@@ -8,7 +8,7 @@
 /* Style the navbar */
 #navbar {
   overflow: hidden;
-  background-color: #101010;
+  background-color: #061f48;
 }
 
 /* Change the color of links on hover */
@@ -74,7 +74,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #1d1d1d;
+  background: #ebebeb;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
