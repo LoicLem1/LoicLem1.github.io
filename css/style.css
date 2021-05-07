@@ -75,12 +75,14 @@ body {
   margin: 0;
   padding: 0;
   background: #ebebeb;
-  color: #fff;
+  color: #061f48;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
+  width: 80%;
+  margin: auto;
 }
 .container {
   margin: 0 auto;
@@ -89,7 +91,7 @@ body {
 }
 h3 {
   font-size: 3rem;
-  color: #fff;
+  color: #061f48;
   padding: 1.3rem;
   margin: 0;
   text-align: center;
@@ -213,7 +215,7 @@ input[type="checkbox"] {
 
 /* Style the submit button */
 input[type="submit"] {
-  background-color: #000080;
+  background-color: #061f48;
   color: white;
   border: none;
 }
@@ -315,7 +317,7 @@ body {
 }
 
 .site-footer {
-  background-color: #101010;
+  background-color: #061f48;
   margin-top: 60px;
   padding: 20px 0 20px;
   font-size: 15px;
@@ -360,7 +362,7 @@ body {
 }
 
 .container1 {
-  background-color: #101010;
+  background-color: #061f48;
 }
 
 .text-justify {
