@@ -24,6 +24,7 @@ p {color:#061f48;}
     margin-left: 25%;
     color: #061f48;
   }
+
 </style>
 
 
@@ -70,9 +71,7 @@ p {color:#061f48;}
 
 
 <div class="hero-div" id = "hero">
-
-  <img class="hero-image" src="images/slice1.png" alt = "Hero Image" />
-
+  <img class="hero-image" src="images/slice1.png" width="100%" alt = "Hero Image" />
 </div> <!--end of hero image-->
 
 
@@ -80,7 +79,8 @@ p {color:#061f48;}
 
 <style>
 
-.button3 {
+.button1 {
+  margin-top: 30px;
     border:#061f48;
     color: white;
     text-align: center;
@@ -93,12 +93,13 @@ p {color:#061f48;}
     width: 20%;
     background-color: #061f48;
     border-radius: 10px;
+    border-style: solid;
   }
 
   .button2 {
     margin-left: 40%;
-    border: white;
-    color: #061f48;
+    border:#061f48;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -107,6 +108,9 @@ p {color:#061f48;}
     cursor: pointer;
     padding: 2%;
     width: 20%;
+    background-color: #061f48;
+    border-radius: 10px;
+    border-style: solid;
   }
   
   .button2 {
@@ -119,24 +123,50 @@ p {color:#061f48;}
     background-color: #ffffff;
     color: #061f48;
     border: #061f48;
+    border-style: solid;
+  }
+
+  .button1:hover {
+    background-color: #ffffff;
+    color: #061f48;
+    border: #061f48;
+    border-style: solid;
+  }
+  
+  .HomeNewImage {margin-left: 25%;}
+  .copyright-text {margin-left: 25%;}
+
+
+  .button3 {
+    margin-left: 40%;
+    border:#061f48;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 2%;
+    width: 20%;
+    background-color: #061f48;
+    border-radius: 10px;
+    border-style: solid;
   }
 
   .button3:hover {
     background-color: #ffffff;
     color: #061f48;
     border: #061f48;
+    border-style: solid;
   }
-  
-  .HomeNewImage {margin-left: 25%;}
-  .copyright-text {margin-left: 25%;}
-
 </style>
 
 </head>
 <body>
 <main>
 <div class="newsletterbutton-center">
-<a href="newsletter.html"><button class="button3" >Sign up to our newsletter! </button></a>
+<a href="newsletter.html"><button class="button1" >Sign up to our newsletter! </button></a>
 </div>
 
   <section id = "what-is">
@@ -149,6 +179,7 @@ p {color:#061f48;}
 
 
 <section id = "latest-news">
+<hr class="solid-line">
 <h1> Latest News </h1>
 <img class="HomeNewImage" src="images/trump_count.png" width="50%" alt="Latest News Image" />
 <p> <b> Trump goes to twitter, "STOP THE COUNT!" </b> </p>
@@ -157,6 +188,17 @@ p {color:#061f48;}
 <a href="latest-news.html"><button class="button2" > Read More! </button></a>
 
 </section> <!--end of latest news section -->
+
+
+
+<section id = "videos">
+  <hr class="solid-line">
+  <h1> Featured Video </h1>
+  <p> <b> Need something to watch? Check out this weeks featured video! </b> </p>
+
+  <a href="videos.html"><button class="button3" > Want to see more videos? </button></a>
+  
+  </section> <!--end of videos-->
 </main>
 
 
